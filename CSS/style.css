@@ -58,7 +58,14 @@ p {
     margin: 1.25rem 0;
 }
 
-button {
+a:hover, a:focus {
+    background-color: hsl(75, 94%, 57%);
+}
+
+a {
+    text-decoration: none;
+    font-size: 0.9rem;
+    font-weight: 600;
     cursor: pointer;
     background-color: hsl(0, 0%, 20%);
     border-radius: 0.5rem;
@@ -68,21 +75,11 @@ button {
     width: 19rem;
 }
 
-button:hover, button:focus {
-    background-color: hsl(75, 94%, 57%);
-}
-
-a {
-    text-decoration: none;
-    font-size: 0.9rem;
-    font-weight: 600;
-}
-
 @media only screen and (max-width: 375px) {
     main {
         padding: 1rem 1rem;    
     }
-    button {
+    a {
         width: 17rem;
     }
 }
